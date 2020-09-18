@@ -32,7 +32,6 @@ end
 def self.find_by_name(name)
   if @@all.find do |song|
     song.name == name
-  else return false
   end
 end
 

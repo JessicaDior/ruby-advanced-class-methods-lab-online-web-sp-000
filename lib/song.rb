@@ -29,4 +29,11 @@ def self.create_by_name(name)
   song
 end
 
+def self.find_by_name(name)
+  if  @@all.include?(name)
+    name
+  else returns false
+  end
+end
+
 end

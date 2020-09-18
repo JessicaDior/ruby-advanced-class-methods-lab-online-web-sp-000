@@ -31,7 +31,6 @@ end
 
 def self.find_by_name(name)
   if @@all.find(name)
-    return name
   else return false
   end
 end

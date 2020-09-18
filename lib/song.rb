@@ -58,4 +58,9 @@ def self.create_from_filename(filename)
   song
 end
 
+def destroy_all
+  self.all.clear
+  @@all = []
+end
+
 end

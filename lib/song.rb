@@ -43,7 +43,8 @@ end
 
 def self.alphabetical
   @@all.sort_by do |song|
-    a <=> b  
+    a <=> b
+    puts @@all  
     end
 end
 

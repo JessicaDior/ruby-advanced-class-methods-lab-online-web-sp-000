@@ -40,6 +40,7 @@ end
 def self.alphabetical
   @@all.sort_by do |a, b|
     a <=> b
+    puts a, b
     end
 end
 

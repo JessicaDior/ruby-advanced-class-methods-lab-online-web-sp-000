@@ -31,7 +31,7 @@ end
 
 def self.find_by_name(name)
   if @@all.include?(name)
-    name
+    return name
   else return false
   end
 end

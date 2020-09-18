@@ -30,7 +30,7 @@ def self.create_by_name(name)
 end
 
 def self.find_by_name(name)
-  if @@all.include?(name)
+  if @@all.find(name)
     return name
   else return false
   end

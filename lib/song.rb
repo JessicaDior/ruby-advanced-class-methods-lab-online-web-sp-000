@@ -34,17 +34,12 @@ def self.find_by_name(name)
 end
 
 def self.find_or_create_by_name(name)
-  if self.find_by_name(name)
-    self.find_by_name(name)
-  else
-  create_by_name(name)
-end
+  self.find_by_name(name) || create_by_name(name)
 end
 
 def self.alphabetical
   @@all.sort_by do |a, b|
     a <=> b
-    puts @@all
     end
 end
 

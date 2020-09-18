@@ -42,9 +42,9 @@ end
 end
 
 def self.alphabetical
-  @@all.sort_by do |song|
+  @@all.sort_by do |a, b|
     a <=> b
-    puts @@all  
+    puts @@all
     end
 end
 

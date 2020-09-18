@@ -38,9 +38,7 @@ def self.find_or_create_by_name(name)
 end
 
 def self.alphabetical
-  @@all.sort_by do |a, b|
-    a <=> b
-    puts a, b
+    @@all.sort { |a, b| a <=> b }
     end
 end
 

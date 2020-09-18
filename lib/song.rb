@@ -42,7 +42,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
-  split_filename = file_name.chomp(".mp3")
+  split_filename = filename.chomp(".mp3")
 end
 
 end
